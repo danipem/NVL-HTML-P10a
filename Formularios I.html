@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario ejercicio</title>
+</head>
+<body>
+<form method="post" action="miservidor.php">
+    <div>
+      <label for=”CP”>CP:</label>
+      <input id=”CP” type=”number”>
+    </div>
+	<div>
+		<label for="Satisfaccion">Nivel de satisfacción:</label>
+		<select id="Satisfaccion">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+	</div>
+	<div>
+		<label for="email">Email:</label>
+		<input id="email" type="text">
+	</div>
+	<div>
+		<label for="Puntospositivos"> Puntos positivos del producto:</label>
+		<textarea id="Puntospositivos"></textarea>
+	</div>
+
+	<div>
+		<label for="Puntosnegativos"> Puntos negativos del producto:</label>
+		<textarea id="Puntosnegativos"></textarea>
+	</div>
+
+	<div>
+		<label for="servicio"> Puntúe el servicio completo:</label>
+		<select id="servicio">
+			<option value="4">Excelente</option>
+			<option value="3">Bueno</option>
+			<option value="2">Regular</option>
+			<option value="1">Pésimo</option>
+		</select>
+	</div>
+
+	<div>
+		<label for="servicio2"> Otra forma de evaluar el servicio:</label>
+		<input name="servicio2" type="radio" value="4">Excelente
+    	<input name="servicio2" type="radio" value="3">Bueno
+    	<input name="servicio2" type="radio" value="2">Regular
+    	<input name="servicio2" type="radio" value="1">Pésimo
+    </input>
+	</div>
+
+	 <input type="submit" value="Enviar"> 
+
+</form>
+</body>
+</html>
